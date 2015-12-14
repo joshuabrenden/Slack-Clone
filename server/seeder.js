@@ -10,7 +10,7 @@ Meteor.startup(function() {
   Messages.remove({});
 
   if (Messages.find({}).count() === 0) {
-    _(10).times(function(n) {
+    _(5).times(function(n) {
       Factory.create('message');
     });
   }
